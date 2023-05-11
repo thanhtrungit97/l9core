@@ -1,0 +1,28 @@
+{
+  "name": "kzvn/l9-core",
+  "description": "Laravel Core",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "trunglt",
+      "email": "trunglt@kozo-japan.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "laravel/framework": "^8.37|^9.0|^10.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "KZVN\\L9Core\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "KZVN\\L9Core\\L9CoreServiceProvider"
+      ]
+    }
+  }
+}
