@@ -48,4 +48,4 @@ class UserController extends Controller
 ```
 ## License
 
-Laravel Telescope is open-sourced software licensed under the MIT license.
+Package is open-sourced software licensed under the MIT license.
