@@ -20,6 +20,32 @@ php artisan kzvn:repository UserRepository
 php artisan kzvn:service UserService
 php artisan kzvn:resource UserResource
 ```
+
+Example code: 
+```php
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Http\Resources\UserResource;
+use App\Repositories\UserRepository;
+
+class UserController extends Controller
+{
+    protected $userRepository;
+    
+    public function __construct(UserRepository $userRepository)
+    {
+        $this->userRepository = $userRepository;
+    }
+    public function show($id){
+        $user = $this->userRepository->find($id);
+        
+        return new UserResource($user);
+    }
+}
+
+```
 ## License
 
 Laravel Telescope is open-sourced software licensed under the MIT license.
