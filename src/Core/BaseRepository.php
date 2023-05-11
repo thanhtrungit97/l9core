@@ -7,9 +7,6 @@ use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Database\Eloquent\Model;
 use KZVN\L9Core\Contracts\RepositoryInterface;
 use KZVN\L9Core\Exceptions\RepositoryException;
-use KZVN\L9Core\Traits\HasCriteria;
-use KZVN\L9Core\Traits\HasOrder;
-use KZVN\L9Core\Traits\HasScope;
 
 abstract class BaseRepository implements RepositoryInterface
 {

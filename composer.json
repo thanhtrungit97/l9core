@@ -1,6 +1,6 @@
 {
   "name": "kzvn/l9-core",
-  "description": "Laravel Core",
+  "description": "A core design pattern for Laravel",
   "type": "library",
   "license": "MIT",
   "authors": [
